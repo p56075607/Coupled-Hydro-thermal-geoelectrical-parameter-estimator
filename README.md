@@ -1,11 +1,10 @@
 # Coupled-Hydro-thermal-geoelectrical-parameter-estimator
 A parameter optimization scheme to estimate the subsurface hydrological, thermal, and geophysical parameters by using soil moisture, temperature, and apparent resistivity observation data.
 
-
- ![image](https://github.com/p56075607/Coupled-Hydro-thermal-geoelectrical-parameter-estimator/blob/main/Flow_chart.svg)
-
 水文模擬參數最佳化（模型參數校驗）
-
+        參數估計流程圖：
+        
+         ![image](https://github.com/p56075607/Coupled-Hydro-thermal-geoelectrical-parameter-estimator/blob/main/Flow_chart.svg)
 - ref：
     
     [Calibration and Uncertainty Analysis for Complex Environmental Models](https://www.notion.so/Calibration-and-Uncertainty-Analysis-for-Complex-Environmental-Models-ce728ec35f9944cca405e2249120d702?pvs=21) 
@@ -33,7 +32,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
         1. ****Levenberg-Marquardt — Solving the nonlinear inverse problem in an iterative way****
             - LM 結合了Gradient descent 法(一階導數)與 Gauss-Newton 法(二階導數)的求解概念，調整lambda 以**穩定**迭代尋找目標函式最小值
                 
-                ![Untitled](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled.png)
+                ![>](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>.png)
                 
                 [https://www.youtube.com/watch?v=2ToL9zUR8ZI](https://www.youtube.com/watch?v=2ToL9zUR8ZI)
                 
@@ -41,22 +40,22 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
                 
             - PEST “Estimation mode”
                 
-                ![from PEST user manual1 p.63](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%201.png)
+                ![from PEST user manual1 p.63](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%201.png)
                 
                 from PEST user manual1 p.63
                 
             - Non-linear parameter estimation
                 
                 
-                ![X is the model operation matrix](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%202.png)
+                ![X is the model operation matrix](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%202.png)
                 
                 X is the model operation matrix
                 
-                ![J is the Jacobian matrix during the iteration ](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%203.png)
+                ![J is the Jacobian matrix during the iteration ](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%203.png)
                 
                 J is the Jacobian matrix during the iteration 
                 
-                ![等號右邊第一項代表二次微分的求解方向，第二項代表一次微分的求解方向。](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%204.png)
+                ![等號右邊第一項代表二次微分的求解方向，第二項代表一次微分的求解方向。](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%204.png)
                 
                 等號右邊第一項代表二次微分的求解方向，第二項代表一次微分的求解方向。
                 
@@ -65,7 +64,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
             
             - Marquardt lambda
                 
-                ![Untitled](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Estimation%20of%20subsurface%20porosities%20and%20thermal%20co%20f17ebe41630c4567b29676a4aab1920f/Untitled.png)
+                ![>](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Estimation%20of%20subsurface%20porosities%20and%20thermal%20co%20f17ebe41630c4567b29676a4aab1920f/>.png)
                 
                 if lambda is very high, becomes…
                 
@@ -73,7 +72,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
                 
                 The Marquardt lambda start from large and decrease as we approach the obj. func. minimum to avoid hemstitching
                 
-                ![Untitled](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Estimation%20of%20subsurface%20porosities%20and%20thermal%20co%20f17ebe41630c4567b29676a4aab1920f/Untitled%201.png)
+                ![>](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Estimation%20of%20subsurface%20porosities%20and%20thermal%20co%20f17ebe41630c4567b29676a4aab1920f/>%201.png)
                 
                 ***PEST implements a trial and error procedure that makes maximum use of spare computing capacity in a parallel environment in determining Marquardt lambda.***
                 
@@ -84,7 +83,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
                 
                 每次迭代中，沿著 Levenberg-Marquardt 所指示的求解方向，找尋能夠使目標函式出現最小值的位置，此移動長度視為最佳移動步長
                 
-                ![沿著求解方向將目標函式對 alpha 作微分並找尋=0時的解，即為目標函式的最小值步長](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%205.png)
+                ![沿著求解方向將目標函式對 alpha 作微分並找尋=0時的解，即為目標函式的最小值步長](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%205.png)
                 
                 沿著求解方向將目標函式對 alpha 作微分並找尋=0時的解，即為目標函式的最小值步長
                 
@@ -94,9 +93,6 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
         
         收斂條件：最大迭代次數、目標函式相對減少量、參數相對改變量
         
-        參數估計流程圖：
-        
-        ![Untitled](Flow_chart.svg)
         
 5. 參數估計**不確定性分析**
     - more
@@ -105,7 +101,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
         
         - Bayes equation
             
-            ![Untitled](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%206.png)
+            ![>](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%206.png)
             
             假設：
             
@@ -138,7 +134,7 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
                         
             - 實作上的假設
                 
-                ![Untitled](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/Untitled%207.png)
+                ![>](Reference%20Journal%20Articals%20f12ccb486cef4c778ffc2a157244405b/Calibration%20and%20Uncertainty%20Analysis%20for%20Complex%20E%20ce728ec35f9944cca405e2249120d702/>%207.png)
                 
                 - **Measurement noise covariance $C(\varepsilon)$：**
                     
