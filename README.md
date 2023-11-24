@@ -2,7 +2,7 @@
 A parameter optimization scheme to estimate the subsurface hydrological, thermal, and geophysical parameters by using soil moisture, temperature, and apparent resistivity observation data.
 
 
- ![image](https://github.com/p56075607/Coupled-Hydro-thermal-geoelectrical-parameter-estimator/Flow_chart.svg)
+ ![image](https://github.com/p56075607/Coupled-Hydro-thermal-geoelectrical-parameter-estimator/blob/main/Flow_chart.svg)
 
 水文模擬參數最佳化（模型參數校驗）
 
