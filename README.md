@@ -1,10 +1,6 @@
 # Coupled-Hydro-thermal-geoelectrical-parameter-estimator
 A parameter optimization scheme to estimate the subsurface hydrological, thermal, and geophysical parameters by using soil moisture, temperature, and apparent resistivity observation data.
 
-# Coupled-Hydro-thermal-geoelectrical-parameter-estimator
-
-Status: Doing
-
 水文模擬參數最佳化（模型參數校驗）
 
 - ref：
