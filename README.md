@@ -149,3 +149,6 @@ A parameter optimization scheme to estimate the subsurface hydrological, thermal
                     Unless a parcov() control variable is provided in the PEST control file, **PESTPP-GLM assumes that all adjustable parameters are statistically independent**. In this case, by default, the **prior standard deviation of each parameter is calculated as a quarter of the difference between its upper and lower bounds** as provided in the PEST control file. However, the par_sigma_range() control variable (the default value for which is 4.0) can be used to specify that the difference between parameter bounds is equivalent to a different number of standard deviations from this. If a parameter is log-transformed, the prior standard deviation of its log is calculated from the difference between the logs of its bounds.
                     
                     → 而先驗參數共變異矩陣則也是假設為一個對角矩陣，也就是假設每個調整參數間也是呈統計上獨立，並且根據軟體預設算法計算先驗參數共變異矩陣，其計算方式為將參數先驗標準偏差設為參數估計上下界差異的四分之一，如此一來參數估計的後驗共變異矩陣可藉由以上定義之測量誤差共變異矩陣及先驗參數共變異矩陣，以及每次迭代運算之亞可比矩陣計算出。
+
+# Acknowledgements
+感謝本研究的執行計畫:發展及應用二維地電阻層析成像技術推 估農地之土壤水文特性，及行政院農業委員會農業試驗所對於本研究的支持
